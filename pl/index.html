@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A0B0D">
+<title>Beltkeep — Twój dziennik BJJ</title>
+<meta name="description" content="Dziennik treningowy do brazylijskiego jiu-jitsu: zapisz trening w 20 sekund i zachowaj na lata każdą notatkę, technikę i pas.">
+<link rel="canonical" href="https://sanchizas007.github.io/beltkeep-site/pl/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/beltkeep-site/en/"><link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/beltkeep-site/de/"><link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/beltkeep-site/es/"><link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/beltkeep-site/fr/"><link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/beltkeep-site/it/"><link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/beltkeep-site/ja/"><link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/beltkeep-site/ko/"><link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/beltkeep-site/nl/"><link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/beltkeep-site/pl/"><link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/beltkeep-site/pt-BR/"><link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/beltkeep-site/ru/"><link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/beltkeep-site/zh-Hans/"><link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/beltkeep-site/zh-Hant/"><link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/beltkeep-site/tr/"><link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/beltkeep-site/uk/"><link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/beltkeep-site/ar/"><link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/beltkeep-site/id/"><link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/beltkeep-site/th/"><link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/beltkeep-site/vi/"><link rel="alternate" hreflang="sv" href="https://sanchizas007.github.io/beltkeep-site/sv/">
+<link rel="icon" href="../icon.png">
+<style>
+:root {
+  --ink: #0A0B0D; --surface: #111316; --raised: #181B20; --text: #F5F5F7; --body: #B4B9C4; --muted: #848A98;
+  --line: rgba(255,255,255,.09); --orange: #FF6A00; --orange-hi: #FF8A33; --blue: #0A5CFF; --blue-hi: #4D8DFF;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--ink); color: var(--body);
+  background-image: radial-gradient(900px 520px at 0% 100%, rgba(255,106,0,.16), transparent 70%),
+                    radial-gradient(800px 480px at 100% 0%, rgba(10,92,255,.20), transparent 70%);
+  background-attachment: fixed;
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+header { padding: 20px 0; border-bottom: 1px solid var(--line); }
+header .bar { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+header a { color: var(--muted); text-decoration: none; font-size: 15px; }
+header a:hover, header a[aria-current] { color: #FFFFFF; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; color: #FFFFFF; letter-spacing: .2px; }
+.brand img { width: 30px; height: 30px; border-radius: 8px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+main { padding: 38px 0 60px; }
+h1 { font-size: 34px; line-height: 1.2; letter-spacing: -.4px; margin: 0 0 8px; color: #fff; }
+h1::after { content: ""; display: block; width: 84px; height: 6px; margin-top: 14px; border-radius: 3px;
+            background: linear-gradient(90deg, var(--orange) 0 60%, var(--blue-hi) 60% 100%); }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--text); }
+h3 { font-size: 17px; margin: 22px 0 4px; color: var(--text); }
+p, li { color: var(--body); }
+li { margin: 8px 0; }
+li strong { color: var(--text); }
+.lede { font-size: 19px; color: var(--muted); margin: 18px 0 26px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; margin: 18px 0; }
+.stub { background: linear-gradient(180deg, var(--raised), var(--surface)); border: 1px solid var(--line); border-radius: 24px;
+        padding: 22px; margin: 24px 0; box-shadow: 0 20px 60px rgba(10,92,255,.16); }
+.stub .label { font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); }
+.stub .figure { font: 800 46px/1.1 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif; font-variant-numeric: tabular-nums;
+                margin: 4px 0 12px; color: var(--orange-hi); direction: ltr; text-align: start; }
+.stub .row { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding: 10px 0 0; margin-top: 10px; font-size: 15px; }
+.stub .row span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; color: #fff; direction: ltr; }
+.tag { display: inline-block; background: var(--orange); color: #0B0C0E; font-weight: 700; font-size: 13px; padding: 4px 11px; border-radius: 999px; }
+.langs { font-size: 14px; margin-top: 10px; line-height: 2; }
+.langs a { margin-inline-end: 12px; white-space: nowrap; }
+small, footer { color: var(--muted); font-size: 14px; }
+footer { border-top: 1px solid var(--line); padding: 22px 0 40px; margin-top: 40px; }
+a { color: var(--orange-hi); }
+a:hover { color: var(--blue-hi); }
+</style>
+</head>
+<body>
+<header><div class="wrap bar"><span class="brand"><img src="../icon.png" alt="">Beltkeep</span><a href="../pl/" aria-current="page">Beltkeep</a><a href="../pl/privacy/">Prywatność</a><a href="../pl/terms/">Warunki</a><a href="../pl/support/">Pomoc</a></div></header>
+<main><div class="wrap">
+
+<h1>Twój dziennik BJJ.</h1>
+<p class="lede">Beltkeep to dziennik treningowy do brazylijskiego jiu-jitsu. Zapisz trening w 20 sekund, zachowaj na lata każdą notatkę i technikę i patrz, jak kształtuje się Twoja droga po pasach.</p>
+
+<div class="stub">
+  <div class="label">Ten miesiąc na macie</div>
+  <div class="figure">12 godz. 40 min</div>
+  <div class="row"><span>Treningi</span><span>11</span></div><div class="row"><span>Rundy</span><span>54</span></div><div class="row"><span>Poddania · klepnięcia</span><span>23 · 17</span></div>
+</div>
+
+<h2>Co potrafi</h2>
+<ul><li><strong>Zapisuje w 20 sekund.</strong> Rodzaj, czas, rundy, poddania, klepnięcia, jak ciężko było i notatka: sześć dotknięć lub mniej.</li><li><strong>Zachowuje wszystko.</strong> Każdy trening według miesięcy, jako lista lub kalendarz, ze zdjęciami i skupieniem na następny trening.</li><li><strong>Zna Twoją grę.</strong> Biblioteka ponad 160 technik, Gi i No-Gi. Oznaczaj to, czego się uczysz, licz, co Ci wychodzi i na co dajesz się złapać, i dodawaj własne.</li><li><strong>Pokazuje postępy.</strong> Czas na macie, roczna mapa cieplna, poddania i klepnięcia na dziesięć rund, pasy i belki, cel tygodniowy i seria.</li><li><strong>Mierzy rundy.</strong> Dzwonki rundy, przerwy i rozgrzewki, które brzmią także przy wyłączonym ekranie.</li><li><strong>Nie gubi treningów.</strong> Dziennik jest w Twoim telefonie i po każdym treningu kopiuje się do wybranego przez Ciebie folderu. Wyeksportujesz go w każdej chwili jako JSON lub CSV.</li></ul>
+
+<h2>Czego nie robi</h2>
+<div class="card"><p>Beltkeep nie ma konta, społecznościowego strumienia ani reklam i nie korzysta z HealthKit. To niezależna aplikacja, niepowiązana z żadną federacją, marką ani akademią i przez nie niepopierana. To dziennik, a nie porada medyczna: trenuj w granicach swoich możliwości i słuchaj swojego ciała i trenera.</p></div>
+
+<h2>Plany</h2>
+<p>Przez 7 dni wypróbujesz wszystko za darmo. <span class="tag">Potem rocznie lub miesięcznie</span> Wybierz subskrypcję roczną lub miesięczną, która odnawia się, dopóki jej nie anulujesz. Obie odblokowują całą aplikację. Gdy plan się kończy, nic nie jest usuwane, a dziennik zawsze możesz wyeksportować. Ceny zobaczysz w aplikacji.</p>
+
+</div></main>
+<footer><div class="wrap">
+<p>Beltkeep · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>Ostatnia aktualizacja: 2026-10-24</p>
+<p class="langs"><a href="../en/">English</a> <a href="../de/">Deutsch</a> <a href="../es/">Español</a> <a href="../fr/">Français</a> <a href="../it/">Italiano</a> <a href="../ja/">日本語</a> <a href="../ko/">한국어</a> <a href="../nl/">Nederlands</a> <a href="../pt-BR/">Português</a> <a href="../ru/">Русский</a> <a href="../zh-Hans/">简体中文</a> <a href="../zh-Hant/">繁體中文</a> <a href="../tr/">Türkçe</a> <a href="../uk/">Українська</a> <a href="../ar/">العربية</a> <a href="../id/">Indonesia</a> <a href="../th/">ไทย</a> <a href="../vi/">Tiếng Việt</a> <a href="../sv/">Svenska</a></p>
+</div></footer>
+</body>
+</html>

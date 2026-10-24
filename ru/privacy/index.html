@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A0B0D">
+<title>Политика конфиденциальности — Beltkeep</title>
+<meta name="description" content="Beltkeep хранит ваш журнал в телефоне. Аккаунта нет.">
+<link rel="canonical" href="https://sanchizas007.github.io/beltkeep-site/ru/privacy/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/beltkeep-site/en/privacy/"><link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/beltkeep-site/de/privacy/"><link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/beltkeep-site/es/privacy/"><link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/beltkeep-site/fr/privacy/"><link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/beltkeep-site/it/privacy/"><link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/beltkeep-site/ja/privacy/"><link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/beltkeep-site/ko/privacy/"><link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/beltkeep-site/nl/privacy/"><link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/beltkeep-site/pl/privacy/"><link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/beltkeep-site/pt-BR/privacy/"><link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/beltkeep-site/ru/privacy/"><link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/beltkeep-site/zh-Hans/privacy/"><link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/beltkeep-site/zh-Hant/privacy/"><link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/beltkeep-site/tr/privacy/"><link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/beltkeep-site/uk/privacy/"><link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/beltkeep-site/ar/privacy/"><link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/beltkeep-site/id/privacy/"><link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/beltkeep-site/th/privacy/"><link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/beltkeep-site/vi/privacy/"><link rel="alternate" hreflang="sv" href="https://sanchizas007.github.io/beltkeep-site/sv/privacy/">
+<link rel="icon" href="../../icon.png">
+<style>
+:root {
+  --ink: #0A0B0D; --surface: #111316; --raised: #181B20; --text: #F5F5F7; --body: #B4B9C4; --muted: #848A98;
+  --line: rgba(255,255,255,.09); --orange: #FF6A00; --orange-hi: #FF8A33; --blue: #0A5CFF; --blue-hi: #4D8DFF;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--ink); color: var(--body);
+  background-image: radial-gradient(900px 520px at 0% 100%, rgba(255,106,0,.16), transparent 70%),
+                    radial-gradient(800px 480px at 100% 0%, rgba(10,92,255,.20), transparent 70%);
+  background-attachment: fixed;
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+header { padding: 20px 0; border-bottom: 1px solid var(--line); }
+header .bar { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+header a { color: var(--muted); text-decoration: none; font-size: 15px; }
+header a:hover, header a[aria-current] { color: #FFFFFF; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; color: #FFFFFF; letter-spacing: .2px; }
+.brand img { width: 30px; height: 30px; border-radius: 8px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+main { padding: 38px 0 60px; }
+h1 { font-size: 34px; line-height: 1.2; letter-spacing: -.4px; margin: 0 0 8px; color: #fff; }
+h1::after { content: ""; display: block; width: 84px; height: 6px; margin-top: 14px; border-radius: 3px;
+            background: linear-gradient(90deg, var(--orange) 0 60%, var(--blue-hi) 60% 100%); }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--text); }
+h3 { font-size: 17px; margin: 22px 0 4px; color: var(--text); }
+p, li { color: var(--body); }
+li { margin: 8px 0; }
+li strong { color: var(--text); }
+.lede { font-size: 19px; color: var(--muted); margin: 18px 0 26px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; margin: 18px 0; }
+.stub { background: linear-gradient(180deg, var(--raised), var(--surface)); border: 1px solid var(--line); border-radius: 24px;
+        padding: 22px; margin: 24px 0; box-shadow: 0 20px 60px rgba(10,92,255,.16); }
+.stub .label { font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); }
+.stub .figure { font: 800 46px/1.1 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif; font-variant-numeric: tabular-nums;
+                margin: 4px 0 12px; color: var(--orange-hi); direction: ltr; text-align: start; }
+.stub .row { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding: 10px 0 0; margin-top: 10px; font-size: 15px; }
+.stub .row span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; color: #fff; direction: ltr; }
+.tag { display: inline-block; background: var(--orange); color: #0B0C0E; font-weight: 700; font-size: 13px; padding: 4px 11px; border-radius: 999px; }
+.langs { font-size: 14px; margin-top: 10px; line-height: 2; }
+.langs a { margin-inline-end: 12px; white-space: nowrap; }
+small, footer { color: var(--muted); font-size: 14px; }
+footer { border-top: 1px solid var(--line); padding: 22px 0 40px; margin-top: 40px; }
+a { color: var(--orange-hi); }
+a:hover { color: var(--blue-hi); }
+</style>
+</head>
+<body>
+<header><div class="wrap bar"><span class="brand"><img src="../../icon.png" alt="">Beltkeep</span><a href="../../ru/">Beltkeep</a><a href="../../ru/privacy/" aria-current="page">Конфиденциальность</a><a href="../../ru/terms/">Условия</a><a href="../../ru/support/">Поддержка</a></div></header>
+<main><div class="wrap">
+
+<h1>Политика конфиденциальности</h1>
+<p class="lede">Beltkeep хранит ваш журнал в телефоне. Аккаунта нет.</p>
+<h2>Что хранится и где</h2>
+<p>Всё, что вы вводите — занятия, заметки, техники, фото, пояса, цели, расписание и настройки, — хранится в базе данных и в файлах на вашем устройстве. Это не отправляется ни нам, ни кому-либо ещё, и у нас нет сервера, который мог бы это принять.</p>
+<h2>Что не собирается</h2>
+<p>Ни имени, ни адреса электронной почты, ни номера телефона, ни геопозиции, ни контактов, ни данных о здоровье. Без аналитики, без рекламы, без отслеживания. Beltkeep не использует HealthKit.</p>
+<h2>Фото</h2>
+<p>Если вы прикрепляете фото к занятию, вы выбираете его системным выбором фото, а Beltkeep получает только те фото, которые вы выбрали. Они хранятся во внутреннем хранилище приложения на вашем устройстве.</p>
+<h2>Покупки и RevenueCat</h2>
+<p>Beltkeep Pro продаётся через App Store, а доступ определяет ваше устройство. Чтобы следить за подписками, приложение также сообщает о ваших покупках сервису RevenueCat, который обрабатывает встроенные покупки. RevenueCat получает от Apple квитанцию о покупке и данные транзакции, анонимный идентификатор пользователя приложения, который он создаёт сам, и технические данные, сопровождающие любой сетевой запрос, такие как IP-адрес, модель устройства, версия системы, язык и страна. Он не получает ваш журнал и ничего другого из того, что вы вводите. По этим данным мы не можем узнать, кто вы, а RevenueCat не использует их для отслеживания вас в приложениях и на сайтах других компаний. Собственная политика RevenueCat на revenuecat.com/privacy описывает, как он обращается с этими данными.</p>
+<h2>Доступ к сети</h2>
+<p>Помимо описанной выше обработки покупок и собственного трафика App Store от Apple, когда вы покупаете или восстанавливаете покупку, приложение не делает сетевых запросов.</p>
+<h2>Уведомления</h2>
+<p>Напоминания и сигналы таймера раундов — это локальные уведомления, которые создаются в вашем телефоне. Сервера push нет, и ничего о них никуда не отправляется.</p>
+<h2>Копии и экспорт: что покидает устройство, и только когда вы это отправляете</h2>
+<p>Если вы выберете папку для копий, например в iCloud Drive, Beltkeep будет копировать туда журнал и фото после каждого занятия. Эта папка ваша; то, что в ней лежит, хранит выбранный вами сервис по своей политике. Экспорт в JSON или CSV покидает устройство, только когда вы решаете поделиться им или сохранить его, и попадает только туда, куда вы его отправите.</p>
+<h2>Дети</h2>
+<p>Beltkeep не собирает персональные данные ни у кого, в том числе у детей. Это журнал тренировок, и он не рассчитан на детей.</p>
+<h2>Удаление данных</h2>
+<p>Удалённое занятие 30 дней лежит в разделе <strong>Недавно удалённые</strong>, а затем удаляется. Удаление приложения навсегда стирает всё, что оно сохранило в телефоне, поэтому сохраните копию или экспорт, если хотите оставить журнал. Копии в папке резервных копий вы можете удалить сами в приложении «Файлы». Записи о покупках, которые хранят Apple и RevenueCat, подчиняются их собственным политикам.</p>
+
+<h2>Контакты</h2>
+<p><a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a></p>
+
+</div></main>
+<footer><div class="wrap">
+<p>Beltkeep · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>Обновлено: 2026-10-24</p>
+<p class="langs"><a href="../../en/privacy/">English</a> <a href="../../de/privacy/">Deutsch</a> <a href="../../es/privacy/">Español</a> <a href="../../fr/privacy/">Français</a> <a href="../../it/privacy/">Italiano</a> <a href="../../ja/privacy/">日本語</a> <a href="../../ko/privacy/">한국어</a> <a href="../../nl/privacy/">Nederlands</a> <a href="../../pl/privacy/">Polski</a> <a href="../../pt-BR/privacy/">Português</a> <a href="../../zh-Hans/privacy/">简体中文</a> <a href="../../zh-Hant/privacy/">繁體中文</a> <a href="../../tr/privacy/">Türkçe</a> <a href="../../uk/privacy/">Українська</a> <a href="../../ar/privacy/">العربية</a> <a href="../../id/privacy/">Indonesia</a> <a href="../../th/privacy/">ไทย</a> <a href="../../vi/privacy/">Tiếng Việt</a> <a href="../../sv/privacy/">Svenska</a></p>
+</div></footer>
+</body>
+</html>

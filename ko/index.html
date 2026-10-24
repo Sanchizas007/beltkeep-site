@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A0B0D">
+<title>Beltkeep — 나의 BJJ 일지</title>
+<meta name="description" content="브라질리언 주짓수 훈련 일지: 수업을 20초 만에 기록하고 메모, 기술, 띠를 몇 년이고 간직하세요.">
+<link rel="canonical" href="https://sanchizas007.github.io/beltkeep-site/ko/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/beltkeep-site/en/"><link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/beltkeep-site/de/"><link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/beltkeep-site/es/"><link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/beltkeep-site/fr/"><link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/beltkeep-site/it/"><link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/beltkeep-site/ja/"><link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/beltkeep-site/ko/"><link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/beltkeep-site/nl/"><link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/beltkeep-site/pl/"><link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/beltkeep-site/pt-BR/"><link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/beltkeep-site/ru/"><link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/beltkeep-site/zh-Hans/"><link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/beltkeep-site/zh-Hant/"><link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/beltkeep-site/tr/"><link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/beltkeep-site/uk/"><link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/beltkeep-site/ar/"><link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/beltkeep-site/id/"><link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/beltkeep-site/th/"><link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/beltkeep-site/vi/"><link rel="alternate" hreflang="sv" href="https://sanchizas007.github.io/beltkeep-site/sv/">
+<link rel="icon" href="../icon.png">
+<style>
+:root {
+  --ink: #0A0B0D; --surface: #111316; --raised: #181B20; --text: #F5F5F7; --body: #B4B9C4; --muted: #848A98;
+  --line: rgba(255,255,255,.09); --orange: #FF6A00; --orange-hi: #FF8A33; --blue: #0A5CFF; --blue-hi: #4D8DFF;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--ink); color: var(--body);
+  background-image: radial-gradient(900px 520px at 0% 100%, rgba(255,106,0,.16), transparent 70%),
+                    radial-gradient(800px 480px at 100% 0%, rgba(10,92,255,.20), transparent 70%);
+  background-attachment: fixed;
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+header { padding: 20px 0; border-bottom: 1px solid var(--line); }
+header .bar { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+header a { color: var(--muted); text-decoration: none; font-size: 15px; }
+header a:hover, header a[aria-current] { color: #FFFFFF; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; color: #FFFFFF; letter-spacing: .2px; }
+.brand img { width: 30px; height: 30px; border-radius: 8px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+main { padding: 38px 0 60px; }
+h1 { font-size: 34px; line-height: 1.2; letter-spacing: -.4px; margin: 0 0 8px; color: #fff; }
+h1::after { content: ""; display: block; width: 84px; height: 6px; margin-top: 14px; border-radius: 3px;
+            background: linear-gradient(90deg, var(--orange) 0 60%, var(--blue-hi) 60% 100%); }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--text); }
+h3 { font-size: 17px; margin: 22px 0 4px; color: var(--text); }
+p, li { color: var(--body); }
+li { margin: 8px 0; }
+li strong { color: var(--text); }
+.lede { font-size: 19px; color: var(--muted); margin: 18px 0 26px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; margin: 18px 0; }
+.stub { background: linear-gradient(180deg, var(--raised), var(--surface)); border: 1px solid var(--line); border-radius: 24px;
+        padding: 22px; margin: 24px 0; box-shadow: 0 20px 60px rgba(10,92,255,.16); }
+.stub .label { font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); }
+.stub .figure { font: 800 46px/1.1 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif; font-variant-numeric: tabular-nums;
+                margin: 4px 0 12px; color: var(--orange-hi); direction: ltr; text-align: start; }
+.stub .row { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding: 10px 0 0; margin-top: 10px; font-size: 15px; }
+.stub .row span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; color: #fff; direction: ltr; }
+.tag { display: inline-block; background: var(--orange); color: #0B0C0E; font-weight: 700; font-size: 13px; padding: 4px 11px; border-radius: 999px; }
+.langs { font-size: 14px; margin-top: 10px; line-height: 2; }
+.langs a { margin-inline-end: 12px; white-space: nowrap; }
+small, footer { color: var(--muted); font-size: 14px; }
+footer { border-top: 1px solid var(--line); padding: 22px 0 40px; margin-top: 40px; }
+a { color: var(--orange-hi); }
+a:hover { color: var(--blue-hi); }
+</style>
+</head>
+<body>
+<header><div class="wrap bar"><span class="brand"><img src="../icon.png" alt="">Beltkeep</span><a href="../ko/" aria-current="page">Beltkeep</a><a href="../ko/privacy/">개인정보</a><a href="../ko/terms/">약관</a><a href="../ko/support/">지원</a></div></header>
+<main><div class="wrap">
+
+<h1>나의 BJJ 일지.</h1>
+<p class="lede">Beltkeep은 브라질리언 주짓수를 위한 훈련 일지입니다. 수업을 20초 만에 기록하고, 모든 메모와 기술을 몇 년이고 간직하며, 띠의 여정이 모양을 갖춰 가는 것을 지켜보세요.</p>
+
+<div class="stub">
+  <div class="label">이번 달 매트 위에서</div>
+  <div class="figure">12시간 40분</div>
+  <div class="row"><span>수업</span><span>11</span></div><div class="row"><span>라운드</span><span>54</span></div><div class="row"><span>서브미션 · 탭</span><span>23 · 17</span></div>
+</div>
+
+<h2>할 수 있는 것</h2>
+<ul><li><strong>20초 만에 기록합니다.</strong> 종류, 시간, 라운드, 서브미션, 탭, 강도, 메모까지. 터치는 여섯 번 이하입니다.</li><li><strong>모두 보관합니다.</strong> 모든 수업을 월별로 목록이나 캘린더로, 사진과 다음 수업의 집중 포인트와 함께.</li><li><strong>내 주짓수를 압니다.</strong> 160개 이상의 기술 라이브러리(Gi/No-Gi). 배우는 기술을 표시하고, 성공한 횟수와 당한 횟수를 세고, 나만의 기술도 추가하세요.</li><li><strong>성장을 보여 줍니다.</strong> 매트 위 시간, 1년 치 히트맵, 10라운드당 서브미션과 탭, 띠와 스트라이프, 주간 목표와 연속 기록.</li><li><strong>라운드를 잽니다.</strong> 라운드, 휴식, 워밍업 벨이 화면이 꺼져 있어도 울립니다.</li><li><strong>기록을 잃지 않습니다.</strong> 일지는 내 폰에 저장되고 수업마다 고른 폴더로 복사됩니다. JSON이나 CSV로 언제든 내보낼 수 있습니다.</li></ul>
+
+<h2>하지 않는 것</h2>
+<div class="card"><p>Beltkeep에는 계정도, 소셜 피드도, 광고도 없으며 HealthKit을 사용하지 않습니다. 독립 앱이며 어떤 연맹, 브랜드, 도장과도 제휴 관계가 없고 그들의 보증을 받지 않았습니다. 일지일 뿐 의학적 조언이 아닙니다. 무리하지 않는 범위에서 훈련하고 몸과 코치의 말에 귀를 기울이세요.</p></div>
+
+<h2>요금제</h2>
+<p>7일 동안 모든 기능을 무료로 써 보세요. <span class="tag">이후 연간 또는 월간</span> 해지할 때까지 갱신되는 연간 또는 월간 구독을 고르세요. 둘 다 앱 전체를 열어 줍니다. 요금제가 끝나도 아무것도 삭제되지 않으며 일지는 언제든 내보낼 수 있습니다. 가격은 앱에 표시됩니다.</p>
+
+</div></main>
+<footer><div class="wrap">
+<p>Beltkeep · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>최종 업데이트: 2026-10-24</p>
+<p class="langs"><a href="../en/">English</a> <a href="../de/">Deutsch</a> <a href="../es/">Español</a> <a href="../fr/">Français</a> <a href="../it/">Italiano</a> <a href="../ja/">日本語</a> <a href="../nl/">Nederlands</a> <a href="../pl/">Polski</a> <a href="../pt-BR/">Português</a> <a href="../ru/">Русский</a> <a href="../zh-Hans/">简体中文</a> <a href="../zh-Hant/">繁體中文</a> <a href="../tr/">Türkçe</a> <a href="../uk/">Українська</a> <a href="../ar/">العربية</a> <a href="../id/">Indonesia</a> <a href="../th/">ไทย</a> <a href="../vi/">Tiếng Việt</a> <a href="../sv/">Svenska</a></p>
+</div></footer>
+</body>
+</html>

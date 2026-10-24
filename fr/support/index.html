@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A0B0D">
+<title>Assistance — Beltkeep</title>
+<meta name="description" content="Comment obtenir de l’aide avec Beltkeep, et les réponses aux questions courantes.">
+<link rel="canonical" href="https://sanchizas007.github.io/beltkeep-site/fr/support/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/beltkeep-site/en/support/"><link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/beltkeep-site/de/support/"><link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/beltkeep-site/es/support/"><link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/beltkeep-site/fr/support/"><link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/beltkeep-site/it/support/"><link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/beltkeep-site/ja/support/"><link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/beltkeep-site/ko/support/"><link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/beltkeep-site/nl/support/"><link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/beltkeep-site/pl/support/"><link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/beltkeep-site/pt-BR/support/"><link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/beltkeep-site/ru/support/"><link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/beltkeep-site/zh-Hans/support/"><link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/beltkeep-site/zh-Hant/support/"><link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/beltkeep-site/tr/support/"><link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/beltkeep-site/uk/support/"><link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/beltkeep-site/ar/support/"><link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/beltkeep-site/id/support/"><link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/beltkeep-site/th/support/"><link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/beltkeep-site/vi/support/"><link rel="alternate" hreflang="sv" href="https://sanchizas007.github.io/beltkeep-site/sv/support/">
+<link rel="icon" href="../../icon.png">
+<style>
+:root {
+  --ink: #0A0B0D; --surface: #111316; --raised: #181B20; --text: #F5F5F7; --body: #B4B9C4; --muted: #848A98;
+  --line: rgba(255,255,255,.09); --orange: #FF6A00; --orange-hi: #FF8A33; --blue: #0A5CFF; --blue-hi: #4D8DFF;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--ink); color: var(--body);
+  background-image: radial-gradient(900px 520px at 0% 100%, rgba(255,106,0,.16), transparent 70%),
+                    radial-gradient(800px 480px at 100% 0%, rgba(10,92,255,.20), transparent 70%);
+  background-attachment: fixed;
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+header { padding: 20px 0; border-bottom: 1px solid var(--line); }
+header .bar { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+header a { color: var(--muted); text-decoration: none; font-size: 15px; }
+header a:hover, header a[aria-current] { color: #FFFFFF; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; color: #FFFFFF; letter-spacing: .2px; }
+.brand img { width: 30px; height: 30px; border-radius: 8px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+main { padding: 38px 0 60px; }
+h1 { font-size: 34px; line-height: 1.2; letter-spacing: -.4px; margin: 0 0 8px; color: #fff; }
+h1::after { content: ""; display: block; width: 84px; height: 6px; margin-top: 14px; border-radius: 3px;
+            background: linear-gradient(90deg, var(--orange) 0 60%, var(--blue-hi) 60% 100%); }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--text); }
+h3 { font-size: 17px; margin: 22px 0 4px; color: var(--text); }
+p, li { color: var(--body); }
+li { margin: 8px 0; }
+li strong { color: var(--text); }
+.lede { font-size: 19px; color: var(--muted); margin: 18px 0 26px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; margin: 18px 0; }
+.stub { background: linear-gradient(180deg, var(--raised), var(--surface)); border: 1px solid var(--line); border-radius: 24px;
+        padding: 22px; margin: 24px 0; box-shadow: 0 20px 60px rgba(10,92,255,.16); }
+.stub .label { font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); }
+.stub .figure { font: 800 46px/1.1 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif; font-variant-numeric: tabular-nums;
+                margin: 4px 0 12px; color: var(--orange-hi); direction: ltr; text-align: start; }
+.stub .row { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding: 10px 0 0; margin-top: 10px; font-size: 15px; }
+.stub .row span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; color: #fff; direction: ltr; }
+.tag { display: inline-block; background: var(--orange); color: #0B0C0E; font-weight: 700; font-size: 13px; padding: 4px 11px; border-radius: 999px; }
+.langs { font-size: 14px; margin-top: 10px; line-height: 2; }
+.langs a { margin-inline-end: 12px; white-space: nowrap; }
+small, footer { color: var(--muted); font-size: 14px; }
+footer { border-top: 1px solid var(--line); padding: 22px 0 40px; margin-top: 40px; }
+a { color: var(--orange-hi); }
+a:hover { color: var(--blue-hi); }
+</style>
+</head>
+<body>
+<header><div class="wrap bar"><span class="brand"><img src="../../icon.png" alt="">Beltkeep</span><a href="../../fr/">Beltkeep</a><a href="../../fr/privacy/">Confidentialité</a><a href="../../fr/terms/">Conditions</a><a href="../../fr/support/" aria-current="page">Assistance</a></div></header>
+<main><div class="wrap">
+
+<h1>Assistance</h1>
+<p class="lede">Écris à <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a>. Indique ta version d’iOS et ce que tu faisais, et une personne te répondra.</p>
+<h2>Questions fréquentes</h2>
+<h3>Le journal ne s’ouvre pas</h3>
+<p>Au lieu d’un journal vide, Beltkeep affiche un écran de récupération, et rien n’est supprimé. Touche d’abord <strong>Réessayer</strong>. Si cela échoue encore, choisis <strong>Restaurer depuis le dossier de sauvegarde</strong> et indique ton dossier ou ton fichier de sauvegarde, ou <strong>Exporter les fichiers bruts</strong> et envoie-les-nous avec <strong>Contacter l’assistance</strong>. Les anciens fichiers passent dans un dossier nommé Recovered ; ils ne sont jamais effacés.</p>
+<h3>Comment sauvegarder mon journal ?</h3>
+<p><strong>Réglages</strong> → <strong>Sauvegarde et export</strong> → <strong>Choisir un dossier</strong>. Choisis un dossier sur iCloud Drive ou dans Fichiers, et Beltkeep y copie ton journal après chaque cours, photos comprises. Tu peux aussi exporter en JSON ou CSV à tout moment.</p>
+<h3>Comment transférer mon journal sur un nouvel iPhone ?</h3>
+<p>Configure le dossier de sauvegarde sur l’ancien téléphone. Sur le nouveau, touche <strong>J’ai une sauvegarde</strong> au démarrage et choisis le même dossier. La sauvegarde de ton iPhone transporte aussi le journal.</p>
+<h3>J’ai supprimé un cours par erreur</h3>
+<p><strong>Réglages</strong> → <strong>Supprimés récemment</strong>. Un cours supprimé y attend 30 jours, et tu peux le restaurer.</p>
+<h3>Comment la série est-elle comptée ?</h3>
+<p>Elle compte les semaines d’affilée où tu as atteint ton objectif hebdomadaire. Un cours compte s’il dure au moins 20 minutes et n’est pas de la préparation physique. Une semaine en pause ne compte pas et n’interrompt pas non plus la série.</p>
+<h3>Pourquoi mes rappels se sont-ils arrêtés ?</h3>
+<p>Beltkeep envoie au plus deux rappels par jour et se tait la nuit. Vérifie que les notifications sont autorisées pour Beltkeep dans les Réglages de ton iPhone, ainsi que les interrupteurs de <strong>Réglages</strong> → <strong>Rappels</strong> dans Beltkeep.</p>
+<h3>Que se passe-t-il quand mon essai ou mon abonnement se termine ?</h3>
+<p>Rien n’est supprimé : ton journal reste sur ton téléphone et <strong>Exporter mes données</strong> reste disponible. Beltkeep te demande de choisir une formule avant de pouvoir rouvrir ou ajouter des cours, et quand tu le fais, tout est comme tu l’as laissé.</p>
+<h3>J’ai souscrit, mais l’app me demande encore de choisir une formule</h3>
+<p>Touche <strong>Restaurer l’achat</strong> sur l’écran des formules, connecté au compte Apple avec lequel tu as acheté. La restauration est gratuite et rend toute formule encore active.</p>
+<h3>Comment annuler l’abonnement ?</h3>
+<p>Dans Beltkeep : <strong>Réglages</strong> → <strong>Abonnement et facturation</strong> → <strong>Gérer l’abonnement</strong>, ou sur ton iPhone : Réglages → ton nom → Abonnements. Annule au moins 24 heures avant la fin de l’essai gratuit ou de la période payée. Tu gardes l’accès jusqu’à la fin de la période payée.</p>
+<h3>Y a-t-il un widget ou une app Apple Watch ?</h3>
+<p>Pas dans cette version. Beltkeep ajoute en revanche deux actions pour Siri et Raccourcis : <strong>Enregistrer un cours</strong> et <strong>Ouvrir le minuteur de rounds</strong>.</p>
+
+
+</div></main>
+<footer><div class="wrap">
+<p>Beltkeep · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>Dernière mise à jour: 2026-10-24</p>
+<p class="langs"><a href="../../en/support/">English</a> <a href="../../de/support/">Deutsch</a> <a href="../../es/support/">Español</a> <a href="../../it/support/">Italiano</a> <a href="../../ja/support/">日本語</a> <a href="../../ko/support/">한국어</a> <a href="../../nl/support/">Nederlands</a> <a href="../../pl/support/">Polski</a> <a href="../../pt-BR/support/">Português</a> <a href="../../ru/support/">Русский</a> <a href="../../zh-Hans/support/">简体中文</a> <a href="../../zh-Hant/support/">繁體中文</a> <a href="../../tr/support/">Türkçe</a> <a href="../../uk/support/">Українська</a> <a href="../../ar/support/">العربية</a> <a href="../../id/support/">Indonesia</a> <a href="../../th/support/">ไทย</a> <a href="../../vi/support/">Tiếng Việt</a> <a href="../../sv/support/">Svenska</a></p>
+</div></footer>
+</body>
+</html>

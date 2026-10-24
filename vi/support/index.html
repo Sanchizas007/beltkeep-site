@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A0B0D">
+<title>Hỗ trợ — Beltkeep</title>
+<meta name="description" content="Cách nhận trợ giúp về Beltkeep và câu trả lời cho các câu hỏi thường gặp.">
+<link rel="canonical" href="https://sanchizas007.github.io/beltkeep-site/vi/support/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/beltkeep-site/en/support/"><link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/beltkeep-site/de/support/"><link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/beltkeep-site/es/support/"><link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/beltkeep-site/fr/support/"><link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/beltkeep-site/it/support/"><link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/beltkeep-site/ja/support/"><link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/beltkeep-site/ko/support/"><link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/beltkeep-site/nl/support/"><link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/beltkeep-site/pl/support/"><link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/beltkeep-site/pt-BR/support/"><link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/beltkeep-site/ru/support/"><link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/beltkeep-site/zh-Hans/support/"><link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/beltkeep-site/zh-Hant/support/"><link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/beltkeep-site/tr/support/"><link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/beltkeep-site/uk/support/"><link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/beltkeep-site/ar/support/"><link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/beltkeep-site/id/support/"><link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/beltkeep-site/th/support/"><link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/beltkeep-site/vi/support/"><link rel="alternate" hreflang="sv" href="https://sanchizas007.github.io/beltkeep-site/sv/support/">
+<link rel="icon" href="../../icon.png">
+<style>
+:root {
+  --ink: #0A0B0D; --surface: #111316; --raised: #181B20; --text: #F5F5F7; --body: #B4B9C4; --muted: #848A98;
+  --line: rgba(255,255,255,.09); --orange: #FF6A00; --orange-hi: #FF8A33; --blue: #0A5CFF; --blue-hi: #4D8DFF;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--ink); color: var(--body);
+  background-image: radial-gradient(900px 520px at 0% 100%, rgba(255,106,0,.16), transparent 70%),
+                    radial-gradient(800px 480px at 100% 0%, rgba(10,92,255,.20), transparent 70%);
+  background-attachment: fixed;
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+header { padding: 20px 0; border-bottom: 1px solid var(--line); }
+header .bar { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+header a { color: var(--muted); text-decoration: none; font-size: 15px; }
+header a:hover, header a[aria-current] { color: #FFFFFF; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; color: #FFFFFF; letter-spacing: .2px; }
+.brand img { width: 30px; height: 30px; border-radius: 8px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+main { padding: 38px 0 60px; }
+h1 { font-size: 34px; line-height: 1.2; letter-spacing: -.4px; margin: 0 0 8px; color: #fff; }
+h1::after { content: ""; display: block; width: 84px; height: 6px; margin-top: 14px; border-radius: 3px;
+            background: linear-gradient(90deg, var(--orange) 0 60%, var(--blue-hi) 60% 100%); }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--text); }
+h3 { font-size: 17px; margin: 22px 0 4px; color: var(--text); }
+p, li { color: var(--body); }
+li { margin: 8px 0; }
+li strong { color: var(--text); }
+.lede { font-size: 19px; color: var(--muted); margin: 18px 0 26px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; margin: 18px 0; }
+.stub { background: linear-gradient(180deg, var(--raised), var(--surface)); border: 1px solid var(--line); border-radius: 24px;
+        padding: 22px; margin: 24px 0; box-shadow: 0 20px 60px rgba(10,92,255,.16); }
+.stub .label { font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); }
+.stub .figure { font: 800 46px/1.1 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif; font-variant-numeric: tabular-nums;
+                margin: 4px 0 12px; color: var(--orange-hi); direction: ltr; text-align: start; }
+.stub .row { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding: 10px 0 0; margin-top: 10px; font-size: 15px; }
+.stub .row span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; color: #fff; direction: ltr; }
+.tag { display: inline-block; background: var(--orange); color: #0B0C0E; font-weight: 700; font-size: 13px; padding: 4px 11px; border-radius: 999px; }
+.langs { font-size: 14px; margin-top: 10px; line-height: 2; }
+.langs a { margin-inline-end: 12px; white-space: nowrap; }
+small, footer { color: var(--muted); font-size: 14px; }
+footer { border-top: 1px solid var(--line); padding: 22px 0 40px; margin-top: 40px; }
+a { color: var(--orange-hi); }
+a:hover { color: var(--blue-hi); }
+</style>
+</head>
+<body>
+<header><div class="wrap bar"><span class="brand"><img src="../../icon.png" alt="">Beltkeep</span><a href="../../vi/">Beltkeep</a><a href="../../vi/privacy/">Riêng tư</a><a href="../../vi/terms/">Điều khoản</a><a href="../../vi/support/" aria-current="page">Hỗ trợ</a></div></header>
+<main><div class="wrap">
+
+<h1>Hỗ trợ</h1>
+<p class="lede">Hãy viết đến <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a>. Nêu phiên bản iOS và việc bạn đang làm, một người thật sẽ trả lời.</p>
+<h2>Câu hỏi thường gặp</h2>
+<h3>Nhật ký không mở được</h3>
+<p>Beltkeep hiển thị màn hình khôi phục thay vì một nhật ký trống, và không có gì bị xóa. Trước hết hãy chạm <strong>Thử lại</strong>. Nếu vẫn lỗi, chọn <strong>Khôi phục từ thư mục sao lưu</strong> và chỉ vào thư mục hoặc tệp sao lưu của bạn, hoặc <strong>Xuất tệp gốc</strong> rồi gửi cho chúng tôi qua <strong>Liên hệ hỗ trợ</strong>. Các tệp cũ được chuyển vào thư mục tên Recovered; chúng không bao giờ bị xóa.</p>
+<h3>Làm sao sao lưu nhật ký?</h3>
+<p><strong>Cài đặt</strong> → <strong>Sao lưu và xuất</strong> → <strong>Chọn thư mục</strong>. Chọn một thư mục trên iCloud Drive hoặc trong Tệp, và Beltkeep sẽ sao chép nhật ký của bạn vào đó sau mỗi buổi tập, kể cả ảnh. Bạn cũng có thể xuất JSON hoặc CSV bất cứ lúc nào.</p>
+<h3>Làm sao chuyển nhật ký sang iPhone mới?</h3>
+<p>Thiết lập thư mục sao lưu trên điện thoại cũ. Trên điện thoại mới, chạm <strong>Tôi có bản sao lưu</strong> khi bắt đầu và chọn cùng thư mục. Bản sao lưu iPhone của bạn cũng mang nhật ký theo.</p>
+<h3>Tôi lỡ xóa nhầm một buổi tập</h3>
+<p><strong>Cài đặt</strong> → <strong>Đã xóa gần đây</strong>. Buổi tập đã xóa nằm ở đó 30 ngày, và bạn có thể khôi phục nó.</p>
+<h3>Chuỗi tuần được tính thế nào?</h3>
+<p>Nó đếm số tuần liên tiếp bạn đạt mục tiêu hằng tuần. Một buổi tập được tính khi kéo dài ít nhất 20 phút và không phải rèn thể lực. Tuần bạn tạm dừng không được tính và cũng không làm đứt chuỗi.</p>
+<h3>Vì sao lời nhắc của tôi dừng?</h3>
+<p>Beltkeep gửi tối đa hai lời nhắc mỗi ngày và im lặng vào ban đêm. Hãy kiểm tra thông báo của Beltkeep đã được cho phép trong Cài đặt của iPhone, và các công tắc trong <strong>Cài đặt</strong> → <strong>Nhắc nhở</strong> bên trong Beltkeep.</p>
+<h3>Điều gì xảy ra khi bản dùng thử hoặc gói đăng ký kết thúc?</h3>
+<p>Không có gì bị xóa: nhật ký của bạn vẫn ở trong điện thoại và <strong>Xuất dữ liệu của tôi</strong> vẫn dùng được. Beltkeep sẽ yêu cầu bạn chọn một gói trước khi mở hoặc thêm buổi tập trở lại, và khi bạn chọn, mọi thứ vẫn như lúc bạn rời đi.</p>
+<h3>Tôi đã đăng ký nhưng ứng dụng vẫn yêu cầu chọn gói</h3>
+<p>Chạm <strong>Khôi phục giao dịch mua</strong> trên màn hình gói, đăng nhập bằng tài khoản Apple bạn đã dùng để mua. Khôi phục miễn phí và đem lại mọi gói còn hiệu lực.</p>
+<h3>Làm sao hủy gói đăng ký?</h3>
+<p>Trong Beltkeep: <strong>Cài đặt</strong> → <strong>Gói và thanh toán</strong> → <strong>Quản lý đăng ký</strong>, hoặc trên iPhone: Cài đặt → tên của bạn → Đăng ký. Hãy hủy ít nhất 24 giờ trước khi bản dùng thử miễn phí hoặc kỳ đã thanh toán kết thúc. Bạn vẫn có quyền truy cập đến hết kỳ đã thanh toán.</p>
+<h3>Có widget hay ứng dụng Apple Watch không?</h3>
+<p>Chưa có trong phiên bản này. Tuy nhiên Beltkeep thêm hai thao tác cho Siri và Phím tắt: <strong>Ghi buổi tập</strong> và <strong>Mở đồng hồ hiệp</strong>.</p>
+
+
+</div></main>
+<footer><div class="wrap">
+<p>Beltkeep · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>Cập nhật lần cuối: 2026-10-24</p>
+<p class="langs"><a href="../../en/support/">English</a> <a href="../../de/support/">Deutsch</a> <a href="../../es/support/">Español</a> <a href="../../fr/support/">Français</a> <a href="../../it/support/">Italiano</a> <a href="../../ja/support/">日本語</a> <a href="../../ko/support/">한국어</a> <a href="../../nl/support/">Nederlands</a> <a href="../../pl/support/">Polski</a> <a href="../../pt-BR/support/">Português</a> <a href="../../ru/support/">Русский</a> <a href="../../zh-Hans/support/">简体中文</a> <a href="../../zh-Hant/support/">繁體中文</a> <a href="../../tr/support/">Türkçe</a> <a href="../../uk/support/">Українська</a> <a href="../../ar/support/">العربية</a> <a href="../../id/support/">Indonesia</a> <a href="../../th/support/">ไทย</a> <a href="../../sv/support/">Svenska</a></p>
+</div></footer>
+</body>
+</html>
